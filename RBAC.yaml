@@ -14,17 +14,17 @@ roleRef:
   name: cluster-admin
 subjects:
 - kind: ServiceAccount
-  name: admin-user
+  name: admin
   namespace: kube-systemapiVersion: v1
 kind: ServiceAccount
 metadata:
-  name: admin-user
+  name: admin
   namespace: kube-system
 ---
 apiVersion: rbac.authorization.k8s.io/v1beta1
 kind: ClusterRoleBinding
 metadata:
-  name: admin-user
+  name: admin
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
