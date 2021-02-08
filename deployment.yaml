@@ -19,7 +19,7 @@ spec:
         app: npm-demo-app
     spec:
       containers:
-        - image: soup1c/nppm-demo-app:29
+        - image: soup1c/npm-demo-app:29
         name: npm-demo-app
           imagePullPolicy: Always
           ports:
