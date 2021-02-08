@@ -19,7 +19,6 @@ spec:
         imagePullPolicy: Always
         name: npm-demo-app
         ports: 
-          - 
-            containerPort: 3000
+          - containerPort: 3000
       imagePullSecrets: 
         - "name:dockersecret"
