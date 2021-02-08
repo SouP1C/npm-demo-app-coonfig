@@ -22,4 +22,3 @@ spec:
           - containerPort: 3000
       imagePullSecrets: 
       - name: dockersecret
-        imagePullPolicy: Always
