@@ -9,6 +9,11 @@ spec:
   selector: 
     matchLabels: 
       app: npm-demo-app
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 2
+
   template: 
     metadata: 
       labels: 
