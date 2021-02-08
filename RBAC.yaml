@@ -4,7 +4,7 @@ metadata:
   name: role-grantor
 rules:
 - apiGroups: ["rbac.authorization.k8s.io"]
-  resources: ["rolebindings"]
+  resources: ["ClusterRoleBinding"]
   verbs: ["create"]
 - apiGroups: ["rbac.authorization.k8s.io"]
   resources: ["clusterroles"]
