@@ -15,10 +15,10 @@ spec:
         app: npm-demo-app
     spec: 
       containers: 
-      - image: "soup1c/npm-demo-app:29"
+      - image: "sm3xypro/demo-app-repo:50"  #"soup1c/npm-demo-app:29"
         imagePullPolicy: Always
         name: npm-demo-app
         ports: 
           - containerPort: 3000
-      imagePullSecrets: 
-      - name: dockersecret
+#      imagePullSecrets: 
+#      - name: dockersecret
