@@ -1,27 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata: 
+  name: npm-demo-app
   labels: 
     app: npm-demo-app
-  name: npm-demo-app
 spec: 
   replicas: 2
   selector: 
     matchLabels: 
       app: npm-demo-app
-  strategy: 
-    rollingUpdate: 
-      maxUnavailable: 2
-    type: RollingUpdate
   template: 
     metadata: 
       labels: 
         app: npm-demo-app
     spec: 
       containers: 
-        image: "soup1c/npm-demo-app:29"
+      - image: "soup1c/npm-demo-app:29"
         imagePullPolicy: Always
-        name: npm-demo-app
+      - name: npm-demo-app
         ports: 
           - 
             containerPort: 3000
